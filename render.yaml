@@ -2,7 +2,7 @@ services:
   - type: web
     name: your-app-name
     runtime: python
-    buildCommand: "./build.sh"
+   buildCommand: "./build.sh" 
     startCommand: "gunicorn portfolio_project.wsgi:application"
     envVars:
       - key: DEBUG
