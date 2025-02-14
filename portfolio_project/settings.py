@@ -7,7 +7,7 @@ SECRET_KEY = 'django-insecure-po8l&^=mp8v_5!3uzsfpm6i0#+hetei2obmi=o5(1*s4p^4s(e
 
 DEBUG = False
 WSGI_APPLICATION = 'portfolio_project.wsgi.application'
-ALLOWED_HOSTS = ['django-web-app-i7u9.onrender.com']
+ALLOWED_HOSTS = ['python-django-portfolio-1.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
