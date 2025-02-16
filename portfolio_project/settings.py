@@ -22,7 +22,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-
+    
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -48,13 +48,18 @@ TEMPLATES = [
         },
     },
 ]
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+'''
+import dj_database_url
+
+DATABASES = {
+    'default' : dj_database_url.parse('postgresql://testdb_j3a5_user:YL5Hj2Zz8WEL4viT7rAlG0Al7iNRSCcW@dpg-cumtobij1k6c73b3q3fg-a.oregon-postgres.render.com/testdb_j3a5')
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
